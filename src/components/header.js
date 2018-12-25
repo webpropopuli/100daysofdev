@@ -2,31 +2,22 @@ import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
 
+import styles from './header-css'
+
+//! a variable that is an image. Easy. Thanks webpack
+import logo from '../images/wpp-logo.png'
+
 const Header = ({ siteTitle }) => (
-  <div
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+  <div style={styles.myHeader}>
+    <div style={styles.myHdrContainer}>
+      <div style={styles.myHdrContent}>
+        <img style={styles.myLogoImg} src={logo} alt="logo" />
+        <h1 style={{ margin: 0 }}>
+          <Link to="/" style={styles.myLink}>
+            {siteTitle}
+          </Link>
+        </h1>
+      </div>
     </div>
   </div>
 )

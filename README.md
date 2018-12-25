@@ -2,14 +2,39 @@ This is my journal site for my first #100daysofcode.
 
 To start if off on day one, I figured I'd learn Gatsby for a couple of days and create the journal so that I'm learning while doing something useful.
 
-<p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
-</p>
 <h1 align="center">
-  Gatsby's default starter
+  My Gatsby Notes
 </h1>
+Random notes about building it:
+
+Day 2
+Gatsby uses React Router instead of React Router
+
+Assets:
+Rather than dumping everything into a folder the HTML way, Gatsby is smarter. G can even convert small images into data URIs. Less requests, better life.
+
+Day 3
+GraphQL: [http://localhost:8000/___graphql]
+Data query lang. queries r kool...unlike REST api, we pass query to query component.
+Name your queries - helps with internals and debugging
+
+```
+  <StaticQuery
+    query={graphql`
+      query SiteTitleQuery {
+        site {
+          siteMetadata {
+            title
+          }
+        }
+      }
+    `}...
+```
+
+## Plugins are awesome
+
+Helmet for metadata
+source-filesystem creates taxonomys and locations
 
 Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
 
