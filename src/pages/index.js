@@ -13,7 +13,7 @@ const IndexPage = () => (
     />
     <h1>Hi peoples...</h1>
     <p>Building a Gatsby blog to cover my 100daysofcode journey</p>
-    <p>THis is gonna be awesome.</p>
+    <p>This is gonna be awesome.</p>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>

@@ -37,5 +37,15 @@ module.exports = {
         name: 'posts',
       },
     },
+    {
+      // Create posts dir named 'posts'
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        // GitHub Flavored Markdown mode (default: true)
+        gfm: true,
+        // Plugins configs
+        plugins: [],
+      },
+    },
   ],
 }
