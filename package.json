@@ -20,7 +20,8 @@
     "react-helmet": "^5.2.0"
   },
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "100daysofcode"
   ],
   "license": "MIT",
   "scripts": {
@@ -35,9 +36,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/webpropopuli/100daysofdev"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/webpropopuli/100daysofdev/issues"
   }
 }
