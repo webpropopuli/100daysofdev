@@ -1,7 +1,7 @@
 ---
-slug: '/day4'
-title: '100daysofcode:Day 4'
-date: '2018-12-25'
+slug: '/day5'
+title: '100daysofcode:Day 5'
+date: '2018-12-26'
 category: '100days'
 ---
 
