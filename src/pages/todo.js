@@ -8,15 +8,14 @@ const ToDo = () => (
   <Layout>
     <SEO title="100daysofcode todo list" />
     <h1>
-      No, no, not <i> that kind</i> of todo list
+      No, no, not <i>that kind</i> of todo list - no coding required.
     </h1>
 
-    <p>
-      <ul>
-        <li>Clean up posts/pages for first 4 days to get a template</li>
-        <li>Remove 'page' Day2 as it's a post now</li>
-      </ul>
-    </p>
+    <ul>
+      <li>Remove 'page' Day2 as it's a post now</li>
+      <li>Add some decent styling somehow</li>
+    </ul>
+
     <Link to="/">home</Link>
   </Layout>
 )

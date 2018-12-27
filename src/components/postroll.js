@@ -1,41 +1,52 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import { StaticQuery, graphql } from 'gatsby'
+//import PropTypes from 'prop-types'
+import { StaticQuery, graphql, Link } from 'gatsby'
 
 import './layout.css'
-//import styles from './postroll-css'
+import styles from './postroll-css'
 
-const Postroll = ({ children }) => (
-  <StaticQuery
-    query={graphql`
-      query PostrollQuery {
-        allMarkdownRemark {
-          edges {
-            node {
-              frontmatter {
-                title
-                slug
-              }
-            }
+const QUERY_Postroll = graphql`
+  query PostrollQuery {
+    allMarkdownRemark(
+      limit: 3
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            title
+            slug
           }
         }
       }
-    `}
+    }
+  }
+`
+
+const Postroll = ({ children }) => (
+  <StaticQuery
+    query={QUERY_Postroll}
     render={({ allMarkdownRemark }) => (
       <>
-        <aside>
+        <aside style={styles.myBackground}>
           <h3>Earlier Posts</h3>
-          {allMarkdownRemark.edges.map(edge => (
-            <li>{edge.node.frontmatter.title}</li>
-          ))}
+          <ul>
+            {allMarkdownRemark.edges.map(edge => (
+              <li key={edge.node.frontmatter.slug}>
+                <Link to={`/posts${edge.node.frontmatter.slug}`}>
+                  {edge.node.frontmatter.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </aside>
       </>
     )}
   />
 )
 
-Postroll.propTypes = {
-  children: PropTypes.node.isRequired,
-}
+// Postroll.propTypes = {
+//   children: PropTypes.node.isRequired,
+// }
 
 export default Postroll

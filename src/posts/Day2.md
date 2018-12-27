@@ -2,6 +2,7 @@
 slug: '/day2'
 title: '100daysofcode:Day 2'
 date: '2018-12-23'
+category: '100days'
 ---
 
 <SEO title="100daysofcode log Day2" />

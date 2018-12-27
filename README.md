@@ -43,6 +43,8 @@ Name your queries - helps with internals and debugging
 - Posts dir is up and I'm just refreshing on using Markdown. Once there's a template, then we have consistency.
   -Frontmatter matters. This connected my head back to WordPress and how a blog might be laid out internally.
 
+##Day6 - Creating pages programmatically
+
 _itals with a link [link text here ](https://www.gatsbyjs.org/docs/gatsby-starters/)._
 
 ## 💫 Deploy

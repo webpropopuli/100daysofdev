@@ -20,7 +20,7 @@ const AboutPage = () => (
     </p>
     <p>Now I'm gonna go build something great.</p>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+      <Image name="gatsby-astronaut.png" />
     </div>
     <Link to="/">Home</Link>
   </Layout>

@@ -14,8 +14,8 @@ const IndexPage = () => (
     <h1>Hi peoples...</h1>
     <p>Building a Gatsby blog to cover my 100daysofcode journey</p>
     <p>This is gonna be awesome.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+    <div style={{ maxWidth: `200px`, marginBottom: `1.45rem` }}>
+      <Image imgName="gatsby-astronaut.png" />
     </div>
     <Link to="/todo/">Todo list</Link>
   </Layout>

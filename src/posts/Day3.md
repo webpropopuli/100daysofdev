@@ -2,6 +2,7 @@
 slug: '/day3'
 title: '100daysofcode:Day 3'
 date: '2018-12-24'
+category: '100days'
 ---
 
     <p>Today's thought</p>
