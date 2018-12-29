@@ -1,8 +1,8 @@
 const styles = {
-  myHdrContainer: {
+  myPageContainer: {
     margin: `0 auto`,
-    maxWidth: 960,
-    padding: `0px 1.1rem 1.4rem`,
+    maxWidth: '95%',
+    padding: `1.1rem`,
     paddingTop: 0,
   },
 }

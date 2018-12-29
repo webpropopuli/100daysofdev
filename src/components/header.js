@@ -8,15 +8,18 @@ import styles from './header-css'
 import logo from '../images/wpp-logo.png'
 
 const Header = ({ siteTitle }) => (
-  <div style={styles.myHeader}>
+  <div style={styles.Header}>
     <div style={styles.myHdrContainer}>
-      <div style={styles.myHdrContent}>
-        <img style={styles.myLogoImg} src={logo} alt="logo" />
-        <h1 style={{ margin: 0 }}>
-          <Link to="/" style={styles.myLink}>
-            {siteTitle}
-          </Link>
-        </h1>
+      <div style={styles.myHdrFlexRow}>
+        <img style={styles.myLogoImg} src={logo} alt="webpropopuli" />
+        <div>
+          <h1 style={styles.title}>
+            <Link to="/" style={styles.myLink}>
+              {siteTitle}
+            </Link>
+          </h1>
+          <p style={styles.subtitle}>...a #100daysofcode journal</p>
+        </div>
       </div>
     </div>
   </div>

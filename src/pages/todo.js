@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'gatsby'
+//import { Link } from 'gatsby'
 
 import Layout from '../components/layouts/page-layout'
 import SEO from '../components/seo'
@@ -12,11 +12,9 @@ const ToDo = () => (
     </h1>
 
     <ul>
-      <li>Remove 'page' Day2 as it's a post now</li>
-      <li>Add some decent styling somehow</li>
+      <li>Design what I 'really' want</li>
+      <li>Get excerpts to cut where I want.</li>
     </ul>
-
-    <Link to="/">home</Link>
   </Layout>
 )
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'gatsby'
+//import { Link } from 'gatsby'
 
 import Layout from '../components/layouts/page-layout'
 import Image from '../components/image'
@@ -22,7 +22,6 @@ const AboutPage = () => (
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image name="gatsby-astronaut.png" />
     </div>
-    <Link to="/">Home</Link>
   </Layout>
 )
 

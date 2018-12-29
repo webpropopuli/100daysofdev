@@ -7,7 +7,7 @@ import { StaticQuery, graphql } from 'gatsby'
 import Header from '../header'
 import Footer from '../footer'
 
-import Postroll from '../postroll'
+import Postroll from '../archives'
 
 import '.././layout.css'
 import styles from './page-layout-css'
@@ -44,15 +44,9 @@ const Layout = ({ children }) => (
         </Helmet>
 
         <Header siteTitle={data.site.siteMetadata.title} />
-        <div style={styles.myHdrContainer}>{children}</div>
+        <div style={styles.myPageContainer}> {children}</div>
 
-        <Postroll />
         <Footer />
-        <footer>
-          © 2019, Built with <a href="https://www.gatsbyjs.org">Gatsby</a> by
-          some amazing guy at{' '}
-          <a href="https://webpropopuli.com">webpropopuli</a>
-        </footer>
       </>
     )}
   />

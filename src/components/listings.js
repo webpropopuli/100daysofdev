@@ -26,13 +26,13 @@ const Listings = () => (
     query={QUERY_Listings}
     render={({ allMarkdownRemark }) =>
       allMarkdownRemark.edges.map(({ node }) => (
-        <article key={node.frontmatter.slug}>
+        <article style={{ marginBottom: 20 }} key={node.frontmatter.slug}>
           <Link to={`/posts${node.frontmatter.slug}`}>
-            <h2>{node.frontmatter.title}</h2>
+            <h3>{node.frontmatter.title}</h3>
           </Link>
-          <p>{node.frontmatter.date}</p>
+          {node.frontmatter.date}
           <p>{node.excerpt}</p>
-          <Link to={`/posts${node.frontmatter.slug}`}>Read it all</Link>
+          <Link to={`/posts${node.frontmatter.slug}`}>(more)</Link>
         </article>
       ))
     }

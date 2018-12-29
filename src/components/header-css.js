@@ -1,22 +1,40 @@
 const styles = {
-  myHeader: {
+  Header: {
     background: 'rebeccapurple',
-    marginBottom: '1.45rem',
+    marginBottom: '1rem',
   },
-  myHdrContent: {
+  myHdrFlexRow: {
     display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'left',
     flexDirection: 'row',
   },
   myHdrContainer: {
     margin: `0 auto`,
-    maxWidth: 960,
-    padding: '1.4rem 1.1rem',
+    maxWidth: '95vw',
+    padding: '1rem',
   },
+
+  title: {
+    fontSize: '1.5rem',
+    color: 'white',
+    margin: 0,
+  },
+
+  subtitle: {
+    fontSize: '1rem',
+    color: 'white',
+    margin: 0,
+  },
+
   myLogoImg: {
-    width: '150px',
+    width: '200px',
     height: '100px',
-    paddingLeft: 0,
+    padding: 0,
     paddingRight: '4%',
+    margin: 0,
+    alignSelf: 'top',
+    transform: 'rotate(-45deg)',
   },
   myLink: {
     color: 'white',
