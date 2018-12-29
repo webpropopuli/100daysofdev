@@ -6,7 +6,7 @@ To start if off on day one, I figured I'd learn Gatsby for a few of days and cre
   My Gatsby Notes
 </h1>
 Random notes about building it:
-- use gatsby-cli
+- use gatsby-cli also ```gatsby new myblog``` seems to work
 - make sure everything is current. This thing pulls from everywhere and I lost an hour removing and re-adding things. Latest React, sharp, gatsby plugins etc.
 
 ##Day 2

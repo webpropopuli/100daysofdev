@@ -8,7 +8,7 @@ import styles from './postroll-css'
 const QUERY_Postroll = graphql`
   query PostrollQuery {
     allMarkdownRemark(
-      limit: 3
+      limit: 5
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {

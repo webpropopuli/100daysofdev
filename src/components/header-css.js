@@ -1,7 +1,7 @@
 const styles = {
   myHeader: {
-    background: `rebeccapurple`,
-    marginBottom: `1.45rem`,
+    background: 'rebeccapurple',
+    marginBottom: '1.45rem',
   },
   myHdrContent: {
     display: 'flex',
@@ -10,7 +10,7 @@ const styles = {
   myHdrContainer: {
     margin: `0 auto`,
     maxWidth: 960,
-    padding: `1.4rem 1.1rem`,
+    padding: '1.4rem 1.1rem',
   },
   myLogoImg: {
     width: '150px',
@@ -19,8 +19,8 @@ const styles = {
     paddingRight: '4%',
   },
   myLink: {
-    color: `white`,
-    textDecoration: `none`,
+    color: 'white',
+    textDecoration: 'none',
   },
 }
 

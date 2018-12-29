@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Layout from '.././layout'
+import Layout from './page-layout'
 import { graphql } from 'gatsby'
 
 // Page queries: this is a registered page. These take params

@@ -4,11 +4,13 @@ import Helmet from 'react-helmet'
 
 import { StaticQuery, graphql } from 'gatsby'
 
-import Header from './header'
-import Postroll from './postroll'
+import Header from '../header'
+import Footer from '../footer'
 
-import './layout.css'
-import styles from './layout-css'
+import Postroll from '../postroll'
+
+import '.././layout.css'
+import styles from './page-layout-css'
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -32,7 +34,10 @@ const Layout = ({ children }) => (
               name: 'description',
               content: data.site.siteMetadata.description,
             },
-            { name: 'keywords', content: 'sample, something, a_keyword' },
+            {
+              name: 'keywords',
+              content: 'Gatsby blog, 100daysofcode, learning with purpose',
+            },
           ]}
         >
           <html lang="en" />
@@ -40,7 +45,14 @@ const Layout = ({ children }) => (
 
         <Header siteTitle={data.site.siteMetadata.title} />
         <div style={styles.myHdrContainer}>{children}</div>
+
         <Postroll />
+        <Footer />
+        <footer>
+          © 2019, Built with <a href="https://www.gatsbyjs.org">Gatsby</a> by
+          some amazing guy at{' '}
+          <a href="https://webpropopuli.com">webpropopuli</a>
+        </footer>
       </>
     )}
   />
