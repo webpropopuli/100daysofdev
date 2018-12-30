@@ -1,6 +1,6 @@
 ---
 slug: '/day4'
-title: '100daysofcode:Day 4'
+title: '100daysofcode: Day 4'
 date: '2018-12-25'
 category: '100days'
 ---

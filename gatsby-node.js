@@ -16,7 +16,10 @@ exports.createPages = ({ graphql, actions }) => {
   return new Promise((resolve, reject) => {
     graphql(`
       {
-        allMarkdownRemark {
+        allMarkdownRemark(
+          limit: 10
+          sort: { order: ASC, fields: [frontmatter___date] }
+        ) {
           edges {
             node {
               frontmatter {
@@ -33,13 +36,16 @@ exports.createPages = ({ graphql, actions }) => {
         return reject(results.errors)
       }
 
-      results.data.allMarkdownRemark.edges.forEach(({ node }) => {
+      const posts = results.data.allMarkdownRemark.edges
+      results.data.allMarkdownRemark.edges.forEach(({ node }, index) => {
         createPage({
           path: `/posts${node.frontmatter.slug}`,
           component: path.resolve('./src/components/layouts/post-layout.js'),
           context: {
             slug: node.frontmatter.slug,
             content: node.rawMarkdownBody,
+            prev: index === 0 ? null : posts[index - 1],
+            next: index === results.length - 1 ? null : posts[index + 1],
           },
         })
       })

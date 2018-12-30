@@ -7,7 +7,7 @@ import { StaticQuery, graphql } from 'gatsby'
 import Header from '../header'
 import Footer from '../footer'
 
-import Postroll from '../archives'
+//import Postroll from '../archives'
 
 import '.././layout.css'
 import styles from './page-layout-css'

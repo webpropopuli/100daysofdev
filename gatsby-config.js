@@ -2,7 +2,8 @@ module.exports = {
   siteMetadata: {
     title: `100daysofdavid`,
     description: `Doing #100daysofcode. I'm David. Get it?`,
-    author: `@webpropopuli`,
+    author: `david@webpropopuli`,
+    siteUrl: 'https://100days.webpropopuli.com',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -15,7 +16,6 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -48,5 +48,6 @@ module.exports = {
         plugins: [],
       },
     },
+    'gatsby-plugin-sitemap',
   ],
 }

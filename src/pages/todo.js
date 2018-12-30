@@ -7,13 +7,21 @@ import SEO from '../components/seo'
 const ToDo = () => (
   <Layout>
     <SEO title="100daysofcode todo list" />
-    <h1>
+    <h2>
       No, no, not <i>that kind</i> of todo list - no coding required.
-    </h1>
+    </h2>
 
-    <ul>
-      <li>Design what I 'really' want</li>
-      <li>Get excerpts to cut where I want.</li>
+    <ul style={{ marginTop: 20 }}>
+      <li> Design what I 'really' want</li>
+      <li> Get excerpts to cut where I want - &lt;more&gt; tag?</li>
+      <li>
+        set transform origin on the logo (though I kinda like that it
+        overflows...)
+      </li>
+      <li>Lose the stupid Gatsby astronaut</li>
+      <li>Let's think about a menu</li>
+      <li> Turn todos into a new taxonomy</li>
+      <li> Pull in todos from Todoist?</li>
     </ul>
   </Layout>
 )

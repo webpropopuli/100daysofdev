@@ -6,8 +6,8 @@ import styles from './footer-css'
 
 const Footer = ({ siteTitle }) => (
   <div style={styles.Footer}>
-    <div style={styles.myFtrContainer}>
-      <div style={styles.myFtrContent}>
+    <div style={styles.ftrContainer}>
+      <div style={styles.myRow}>
         <h3 style={{ margin: 0 }}>
           <p>This is my amazing footer</p>
         </h3>
@@ -19,10 +19,13 @@ const Footer = ({ siteTitle }) => (
           <Link to="/allposts">Blog</Link>
           <Link to="/todo">Todo List</Link>
         </div>
-      </div>
+      </div>{' '}
     </div>
-    © 2019, Built with <Link to="https://www.gatsbyjs.org">Gatsby</Link> by some
-    amazing guy at <Link to="https://webpropopuli.com">webpropopuli</Link>
+    <div style={styles.ftrCredits}>
+      © 2019, Built with <Link to="https://www.gatsbyjs.org">Gatsby</Link> by
+      some amazing guy at{' '}
+      <Link to="https://webpropopuli.com">webpropopuli</Link>
+    </div>
   </div>
 )
 

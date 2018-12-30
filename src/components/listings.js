@@ -1,6 +1,8 @@
 import React from 'react'
 import { StaticQuery, Link, graphql } from 'gatsby'
 
+import styles from './listings-css.js'
+
 const QUERY_Listings = graphql`
   query BlogList {
     allMarkdownRemark(
@@ -26,13 +28,15 @@ const Listings = () => (
     query={QUERY_Listings}
     render={({ allMarkdownRemark }) =>
       allMarkdownRemark.edges.map(({ node }) => (
-        <article style={{ marginBottom: 20 }} key={node.frontmatter.slug}>
+        <article style={styles.article} key={node.frontmatter.slug}>
           <Link to={`/posts${node.frontmatter.slug}`}>
             <h3>{node.frontmatter.title}</h3>
           </Link>
-          {node.frontmatter.date}
+          <div style={styles.date}>{node.frontmatter.date}</div>
           <p>{node.excerpt}</p>
-          <Link to={`/posts${node.frontmatter.slug}`}>(more)</Link>
+          <Link to={`/posts${node.frontmatter.slug}`} style={styles.read_more}>
+            (more)
+          </Link>
         </article>
       ))
     }

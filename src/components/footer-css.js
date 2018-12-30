@@ -3,16 +3,17 @@ const styles = {
     maxWidth: '95vw',
     margin: '0 auto',
   },
-  myFtrContent: {
+  ftrContainer: {
+    background: 'slategray',
+    margin: '0 auto',
+    padding: '1rem',
+  },
+  myFtrRow: {
     color: 'yellow',
     display: 'flex',
     flexDirection: 'row',
   },
-  myFtrContainer: {
-    background: 'slategray',
-    margin: '0 auto',
-    padding: '1.4rem 1.1rem',
-  },
+
   ftrNav: {
     display: 'flex',
     flexDirection: 'column',
@@ -24,6 +25,7 @@ const styles = {
     textDecoration: 'none',
     fontSize: '.8em',
   },
+  ftrCredits: {},
 }
 
 export default styles

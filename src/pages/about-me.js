@@ -2,7 +2,7 @@ import React from 'react'
 //import { Link } from 'gatsby'
 
 import Layout from '../components/layouts/page-layout'
-import Image from '../components/image'
+
 import SEO from '../components/seo'
 
 const AboutPage = () => (
@@ -19,9 +19,6 @@ const AboutPage = () => (
       a break for me.
     </p>
     <p>Now I'm gonna go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image name="gatsby-astronaut.png" />
-    </div>
   </Layout>
 )
 

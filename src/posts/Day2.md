@@ -1,6 +1,6 @@
 ---
 slug: '/day2'
-title: '100daysofcode:Day 2'
+title: '100daysofcode: Day 2'
 date: '2018-12-23'
 category: '100days'
 ---
@@ -19,5 +19,3 @@ Though it's pretty slick how easy Gatsby makes it to create content hierarchy - 
 
 But it's somewhat ugly as I have to write code <strong>and</strong>{' '} content together. I'll roll this into the finished blog when it's ready.
 Let's see how the day goes....
-
-<Link to="/">home</Link>

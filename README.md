@@ -47,7 +47,10 @@ Name your queries - helps with internals and debugging
 
 _itals with a link [link text here ](https://www.gatsbyjs.org/docs/gatsby-starters/)._
 
-## 💫 Deploy
+## 💫 Deploy to GitPages and a subdomain
+
+1. npm install gh-pages --save-dev
+2.
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
 

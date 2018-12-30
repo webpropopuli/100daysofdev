@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import Layout from './page-layout'
+import PrevNext from '../prevnext'
+
 import { graphql } from 'gatsby'
 
 // Page queries: this is a registered page. These take params
@@ -8,6 +10,7 @@ import { graphql } from 'gatsby'
 export default class postLayout extends Component {
   render() {
     const { markdownRemark } = this.props.data
+    const { prev, next } = this.props.pageContext
 
     return (
       <Layout>
@@ -17,6 +20,7 @@ export default class postLayout extends Component {
             __html: markdownRemark.html,
           }}
         />
+        <PrevNext prev={prev && prev.node} next={next && next.node} />
       </Layout>
     )
   }

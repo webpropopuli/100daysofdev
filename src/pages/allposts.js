@@ -5,7 +5,14 @@ import Layout from '../components/layouts/page-layout'
 import SEO from '../components/seo'
 import Listings from '../components/listings'
 
-import styles from './allposts-css'
+const styles = {
+  pageContainer: {
+    background: '#eee',
+    display: 'grid',
+    gridTemplateColumns: '3fr 1fr',
+    gridGap: 10,
+  },
+}
 
 const AllPosts = () => (
   <Layout>
