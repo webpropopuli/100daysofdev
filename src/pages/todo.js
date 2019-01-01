@@ -20,6 +20,7 @@ const ToDo = () => (
       </li>
       <li>Lose the stupid Gatsby astronaut</li>
       <li>Let's think about a menu</li>
+      <li>BUG: day 7 only has no 'Next' item</li>
       <li> Turn todos into a new taxonomy</li>
       <li> Pull in todos from Todoist?</li>
     </ul>

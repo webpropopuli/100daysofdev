@@ -17,3 +17,5 @@ I took some time today to map out what I have left in, at least, the first four 
 I mean seriously, did fCC never imagine that people might want an easy way of viewing their progress?
 
 Anyway, I'll post that image tomorrow as I haven't figured out the right way to add images to posts in Gatsby. Yeah, yeah - I know the dirty way to insert an image but not the cool, Gatsby-way. (I'm hoping there is one - probably a plugin I haven't seen yet.)
+
+And "Merry XMas" to all of you.

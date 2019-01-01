@@ -10,7 +10,7 @@ Random notes about building it:
 - make sure everything is current. This thing pulls from everywhere and I lost an hour removing and re-adding things. Latest React, sharp, gatsby plugins etc.
 
 ##Day 2
-Gatsby uses React Router instead of React Router
+Gatsby uses Reach Router instead of React Router. I have no clue why I care at the moment. One day, I'll wish I read this more times.
 
 Assets:
 Rather than dumping everything into a folder the HTML way, Gatsby is smarter. G can even convert small images into data URIs. Less requests, better life.
@@ -33,25 +33,27 @@ Name your queries - helps with internals and debugging
     `}...
 ```
 
-## Plugins are awesome
+## Gatsby plugins are awesome
 
 1. Helmet is for metadata
 2. source-filesystem creates taxonomies and locations and monitors new path for content.
+3. sitemap is obvious
+4. remark is markdown related
 
-##Day4
+##Making posts better
 
 - Posts dir is up and I'm just refreshing on using Markdown. Once there's a template, then we have consistency.
   -Frontmatter matters. This connected my head back to WordPress and how a blog might be laid out internally.
 
-##Day6 - Creating pages programmatically
+##Creating pages programmatically
 
 _itals with a link [link text here ](https://www.gatsbyjs.org/docs/gatsby-starters/)._
 
-## 💫 Deploy to GitPages and a subdomain
+## Deployment
 
-1. npm install gh-pages --save-dev
-2.
+1) Run gatsby build and attach any server-side errors that show up.
+2) Just FTP the public dir up to shared hosting. Seriously - it's that easy.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
 
-<!-- AUTO-GENERATED-CONTENT:END -->
+[## Add more stuff
+Look through the plugins, day-dream a bit and make it super cool.
