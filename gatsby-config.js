@@ -1,8 +1,23 @@
 module.exports = {
   siteMetadata: {
     title: `100daysofdavid`,
-    description: `Doing #100daysofcode. I'm David. Get it?`,
+    description: `Doing #100daysofcode and doing some real work.`,
     author: `david@webpropopuli`,
+
+    menuLinks: [
+      {
+        name: 'home',
+        link: '/',
+      },
+      {
+        name: 'blog',
+        link: '/allposts',
+      },
+      {
+        name: 'todo',
+        link: '/todo',
+      },
+    ],
     siteUrl: 'https://100days.webpropopuli.com',
   },
   plugins: [

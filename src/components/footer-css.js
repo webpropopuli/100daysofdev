@@ -14,13 +14,6 @@ const styles = {
     flexDirection: 'row',
   },
 
-  ftrNav: {
-    display: 'flex',
-    flexDirection: 'column',
-    textDecoration: 'none',
-    fontSize: '.8em',
-    paddingLeft: '1%',
-  },
   myLink: {
     textDecoration: 'none',
     fontSize: '.8em',
