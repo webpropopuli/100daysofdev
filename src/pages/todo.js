@@ -19,9 +19,11 @@ const ToDo = () => (
         overflows...)
       </li>
       <li>Lose the stupid Gatsby astronaut</li>
-      <li>Let's think about a menu</li>
-      <li>BUG: day 7 only has no 'Next' item</li>
       <li> Turn todos into a new taxonomy</li>
+      <li>
+        {' '}
+        set each page to <code>min-height: 100vh</code>{' '}
+      </li>
       <li> Pull in todos from Todoist?</li>
     </ul>
   </Layout>
