@@ -9,7 +9,7 @@ category: '100days'
 
 Adding another green block to my fCC cert by finishing the Javascript Intermediate Algorithms section and "Make a Person"
 
-Reminded me how shaky I am on JS onjects (because I'm anti-OOP and I stupidly conflated objects in JS with OOP in C#). My bad.
+Reminded me how shaky I am on JS objects (because I'm anti-OOP and I stupidly conflated objects in JS with OOP in C#). My bad.
 
 Anyway, the problem is stupid simple, it's a syntax challenge mostly. Basic solution has things that look like:
 
