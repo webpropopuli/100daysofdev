@@ -1,3 +1,5 @@
+# UPDATE: 100days of code is awesome, but 100days of gatsby is not. After a couple of weeks of this, I found myseld wanting to look into some alternative technologies - notably NextJS - and I'm working on that and more React.
+--------------------------------------
 This is my journal site for my first #100daysofcode.
 
 To start if off on day one, I figured I'd learn Gatsby for a few of days and create the journal so that I'm learning _and_ doing something useful.
@@ -10,7 +12,7 @@ Random notes about building it:
 - make sure everything is current. This thing pulls from everywhere and I lost an hour removing and re-adding things. Latest React, sharp, gatsby plugins etc.
 
 ##Day 2
-Gatsby uses Reach Router instead of React Router. I have no clue why I care at the moment. One day, I'll wish I read this more times.
+Gatsby uses React Router instead of React Router. I have no clue why I care at the moment. One day, I'll wish I read this more times.
 
 Assets:
 Rather than dumping everything into a folder the HTML way, Gatsby is smarter. G can even convert small images into data URIs. Less requests, better life.
